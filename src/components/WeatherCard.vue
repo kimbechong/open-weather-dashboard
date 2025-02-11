@@ -1,7 +1,10 @@
 <template>
 	<div class="weather-card" v-if="weatherData.location.city">
 		<h2>Weather Information</h2>
-		<p>{{ weatherData.location.city }}, {{ weatherData.location.state }}, {{ weatherData.location.country }}</p>
+		<p>
+			{{ weatherData.location.city }}, {{ weatherData.location.state }},
+			{{ weatherData.location.country }}
+		</p>
 		<p>Temperature: {{ weatherData.weather.temp }}°</p>
 		<p>Humidity: {{ weatherData.weather.humidity }}%</p>
 		<p>Wind: {{ weatherData.weather.wind }}</p>
