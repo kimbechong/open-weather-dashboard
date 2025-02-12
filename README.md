@@ -7,7 +7,6 @@
 - [Project Status](#project-status)
 	- [To Do](#to-do)
 - [Installation](#installation)
-	- [Install dependencies](#install-dependencies)
 
 ## Description
 
@@ -17,6 +16,7 @@ Weather Dashboard is a web application which provides current weather data when 
 
 -   [VueJS](https://vuejs.org/)
 -   [OpenWeather API](https://openweathermap.org/api)
+    -   [OpenWeather API Postman Collection](https://www.postman.com/kimbechong/workspace/kimbechong/collection/15185265-3ac01b40-4463-49c8-b5a0-c6f6bbb88e15?action=share&creator=15185265)
 
 ## Project Status
 
@@ -25,16 +25,16 @@ Weather Dashboard is a web application which provides current weather data when 
 ### To Do
 
 -   [ ] Add styling
+    -   use OpenWeather API color scheme (orange, gray, black)
 -   [ ] Programmable API Key
 -   [ ] Include link to Postman collection
 -   [ ] Add screenshots to `README.md`
 -   [ ] Add features in `README.md`
 -   [ ] Allow users to select city if there's multiple matching options
 -   [ ] Allow users to save city to dashboard
+-   [ ] Dark mode toggle
 
 ## Installation
-
-### Install dependencies
 
 1. Clone the repository
 
