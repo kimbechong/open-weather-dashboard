@@ -1,16 +1,16 @@
-# Weather Dashboard
+# open-weather-dashboard
 
 ## Table of Contents
 
 - [Description](#description)
 - [Tech Stack](#tech-stack)
 - [Project Status](#project-status)
-	- [To Do](#to-do)
+    - [To Do](#to-do)
 - [Installation](#installation)
 
 ## Description
 
-Weather Dashboard is a web application which provides current weather data when users search by city name.
+This web application provides current weather data when users search by city name. It calls OpenWeather APIs for city geolocation and weather data.
 
 ## Tech Stack
 
