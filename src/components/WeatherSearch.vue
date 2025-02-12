@@ -41,6 +41,7 @@ export default {
 	},
 	methods: {
 		async getCurrentWeather() {
+			console.log(import.meta.env.VITE_SOME_KEY);
 			await this.getGeocode(this.city);
 			console.log('coordinates: ' + this.lat + ', ' + this.lon);
 			const url = `https://api.openweathermap.org/data/2.5/weather?lat=${this.lat}&lon=${this.lon}&units=${this.weatherData.weather.unit}&appId=${this.apiKey}`;
