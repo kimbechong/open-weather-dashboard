@@ -57,7 +57,7 @@ npm install
 4. Start the project locally
 
 ```shell
-npm start
+npm run serve
 ```
 
 5. Navigate to `http://localhost:8080/` on your browser
