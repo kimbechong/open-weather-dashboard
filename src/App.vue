@@ -58,7 +58,6 @@ export default {
 	},
 	watch: {
 		'weatherData.weather.unit'(unit) {
-			console.log(unit);
 			let temp = this.weatherData.weather.temp;
 			if (unit === 'imperial') {
 				temp = (temp - 32) * (5 / 9);
@@ -71,5 +70,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

@@ -23,7 +23,7 @@ export default {
 	},
 	data() {
 		return {
-			apiKey: 'apiKey',
+			apiKey: '',
 			lat: 0,
 			lon: 0,
 			city: '',
@@ -41,9 +41,9 @@ export default {
 	},
 	methods: {
 		async getCurrentWeather() {
-			console.log(import.meta.env.VITE_SOME_KEY);
+			this.apiKey = import.meta.env.VITE_API_KEY;
+			console.log('apiKey: ' + this.apiKey);
 			await this.getGeocode(this.city);
-			console.log('coordinates: ' + this.lat + ', ' + this.lon);
 			const url = `https://api.openweathermap.org/data/2.5/weather?lat=${this.lat}&lon=${this.lon}&units=${this.weatherData.weather.unit}&appId=${this.apiKey}`;
 			try {
 				const response = await axios.get(url);
@@ -77,6 +77,7 @@ export default {
 				this.country = data.country;
 				this.lat = data.lat;
 				this.lon = data.lon;
+				console.log('coordinates: ' + this.lat + ', ' + this.lon);
 			} catch (error) {
 				console.error('getGeocode error: ', error);
 			}
