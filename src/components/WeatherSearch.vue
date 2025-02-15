@@ -1,10 +1,25 @@
 <template>
 	<div>
 		<h1>Weather Dashboard</h1>
-		<input type="text" v-model="city" placeholder="City, State, Country" />
-		<button @click="getCurrentWeather">Search</button>
+		<form class="pure-form">
+			<input
+				id="city-input"
+				class="pure-input-2-3"
+				type="text"
+				v-model="city"
+				placeholder="Enter City Name"
+			/>
+			<button
+				class="pure-button pure-button-primary"
+				@click="getCurrentWeather"
+			>
+				Search
+			</button>
+		</form>
 		<!-- features: allow use to pick city if multiple with same name -->
-		<button @click="handleUnitButtonClick">
+
+		<!-- to do: show 2 buttons for units and disable selected unit -->
+		<button class="pure-button" @click="handleUnitButtonClick">
 			{{ weatherData.weather.unit === 'imperial' ? '°F' : '°C' }}
 		</button>
 	</div>
@@ -109,4 +124,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+#city-input {
+	margin: 10px;
+}
+</style>
