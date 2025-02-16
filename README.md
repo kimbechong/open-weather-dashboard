@@ -2,11 +2,12 @@
 
 ## Table of Contents
 
--   [Description](#description)
--   [Tech Stack](#tech-stack)
--   [Project Status](#project-status)
-    -   [To Do](#to-do)
--   [Installation](#installation)
+- [Description](#description)
+- [Tech Stack](#tech-stack)
+- [Data](#data)
+- [Project Status](#project-status)
+    - [To Do](#to-do)
+- [Installation](#installation)
 
 ## Description
 
@@ -16,6 +17,9 @@ This web application provides current weather data when users search by city nam
 
 -   [VueJS](https://vuejs.org/)
 -   [Vite](https://vite.dev/)
+-   [Pure.css](https://pure-css.github.io/)
+
+## Data
 -   [OpenWeather API](https://openweathermap.org/api)
     -   [OpenWeather API Postman Collection](https://www.postman.com/kimbechong/workspace/kimbechong/collection/15185265-3ac01b40-4463-49c8-b5a0-c6f6bbb88e15?action=share&creator=15185265)
 
