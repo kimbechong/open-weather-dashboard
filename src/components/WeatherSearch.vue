@@ -11,6 +11,7 @@
 			/>
 			<button
 				class="pure-button pure-button-primary"
+				type="button"
 				@click="getCurrentWeather"
 			>
 				Search
@@ -19,7 +20,11 @@
 		<!-- features: allow use to pick city if multiple with same name -->
 
 		<!-- to do: show 2 buttons for units and disable selected unit -->
-		<button class="pure-button" @click="handleUnitButtonClick">
+		<button
+			class="pure-button"
+			type="button"
+			@click="handleUnitButtonClick"
+		>
 			{{ weatherData.weather.unit === 'imperial' ? '°F' : '°C' }}
 		</button>
 	</div>
@@ -57,12 +62,13 @@ export default {
 	methods: {
 		async getCurrentWeather() {
 			this.apiKey = import.meta.env.VITE_API_KEY;
-			console.log('apiKey: ' + this.apiKey);
+			console.log('VITE_API_KEY: ' + this.apiKey);
 			await this.getGeocode(this.city);
 			const url = `https://api.openweathermap.org/data/2.5/weather?lat=${this.lat}&lon=${this.lon}&units=${this.weatherData.weather.unit}&appId=${this.apiKey}`;
 			try {
 				const response = await axios.get(url);
 				const data = response.data;
+				// console.log(data);
 				this.temp = data.main.temp;
 				this.humidity = data.main.humidity;
 				this.wind = data.wind.speed;
