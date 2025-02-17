@@ -10,6 +10,7 @@
 				placeholder="Enter City Name"
 			/>
 			<button
+				id="searchCity"
 				class="pure-button pure-button-primary"
 				type="button"
 				@click="getCurrentWeather"
@@ -21,6 +22,7 @@
 
 		<!-- to do: show 2 buttons for units and disable selected unit -->
 		<button
+			id="changeUnit"
 			class="pure-button"
 			type="button"
 			@click="handleUnitButtonClick"
@@ -133,5 +135,15 @@ export default {
 <style scoped>
 #city-input {
 	margin: 10px;
+}
+
+#searchCity {
+	background-color: #ED6E4C;
+	color: #F2F2F1;
+}
+
+#changeUnit {
+	background-color: #88C5EB;;
+	color: #48484A;
 }
 </style>
